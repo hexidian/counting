@@ -15,5 +15,5 @@ def test_words(prev_word, more, binary):
 
     return False
 
-binary = raw_input("binart?\n>>>")
+binary = raw_input("binary?\n>>>")
 print test_words("", len(binary), binary)
