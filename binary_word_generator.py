@@ -3,20 +3,6 @@ ranges = {
     "0":[chr(i) for i in range(97,110)],#a-m
     "1":[chr(i) for i in range(110,123)]#n-z
 }
-def test_words(prev_word, more, binary):
-    this_binary = int(binary[-more])* -1 + 1
-    if more==0:
-        return prev_word if prev_word in words else False
-
-    prev_word
-    for i in range(13):
-        test_word = prev_word + chr(97+i+ (13*this_binary) )
-        test = test_words(test_word, more-1, binary)
-        if test:
-            return test
-
-    return False
-
 def word_look(binary):
     length = len(binary)
     for word in words:
