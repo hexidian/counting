@@ -19,8 +19,7 @@ def word_look(binary):
         if works:
             return word
     return False
-#binary = raw_input("binary?\n>>>")
+binary = raw_input("binary?\n>>>")
 start = time.time()
-for i in xrange(64):
-    print word_look("{0:b}".format(i))
+print word_look(binary)
 print "completed in:",time.time()-start
